@@ -4,7 +4,6 @@ package com.back.api.Controller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +16,6 @@ import com.back.api.Model.Usuario;
 import com.back.api.Service.UsuarioService;
 
 @RestController // API REST.
-@CrossOrigin("*")
 @RequestMapping("/usuarios") // Requisição das APIs por meio da URL /usuarios.
 public class UsuarioController {
     
